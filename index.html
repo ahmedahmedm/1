@@ -9,33 +9,32 @@
         <link rel="stylesheet" href="bootstrap.min.css">
     </head>
     <body>
-    <div class="container d-flex justify-content-center" style=" position: relative;top: 100px;">
-        <div style="width: 75%;" id="menu">
-        <div class="input-group">
-                <input type="text" class="form-control" placeholder="اكتب  هنا" aria-label="Username" aria-describedby="addon-wrapping">
-                <div>
-            <button type="button" class="btn btn-primary mm">اضغط</button>
+        <div class="container d-flex align-items-center justify-content-center flex-wrap"style="width: 80%;height: 600px;">
+            <div class="input-group mb-3"id="menu">
+              <input id="inputNum" type="text" class="form-control" placeholder="اكتب هنا " aria-label="Recipient's username" aria-describedby="button-addon2">
+              <button class="btn btn-primary" type="button" id="button-two">
+                دوس هنا
+              </button>
             </div>
+            <div style="background:rgba(231, 46, 46, 0.733);width: 180px;height: 50px;padding: 10px 10px 10px;" id="div-none">😂اكتب الاول متكسلش</div>
+            <div id="video-nom" style="display: none;">
+                <video autoplay loop>
+                    <source src="videoplayback.mp4" type="video/mp4">
+                </video>
+                </div>
           </div>
-          <div style="width: 250px;background: rgba(197, 77, 77, 0.644);position: absolute;top: 700%;left: 450px; padding: 10px 20px 0;"><p>😂 اكتب الاول يسطا متكسلش</p></div>
-        </div>
-    </div>
-          <div  id="dop"style="position:fixed;top: 10%;left: 40%;display:none;">
-              <video controls width="300" autoplay>
-                  <source src="videoplayback.mp4" type="video/mp4">
-              </video>
-          </div>
+          <p class="text-center">made by<strong>Ahmedaboyounis</strong>😍</p>
+          
 
-          <p style="position: fixed;top: 90%;left: 40%;">made by<h2 style="font-size: 20px;position: fixed;top: 90%;left: 44.5%;"> Ahmed Abu Younes 😍</h2></p>
                 
         <script src="bootstrap.bundle.min.js"></script>
         <script src="jquery-3.6.0.min.js"></script>
         <script>
-            $('.mm').click(function(){
-                document.getElementById('menu').style.display="none";
-                document.getElementById('dop').style.display="block";
-
-            })
+            $('#button-two').click(function(){
+            document.getElementById('div-none').style.display="none";
+            document.getElementById('menu').style.display="none";
+            document.getElementById('video-nom').style.display="block";
+        });
         </script>
     </body>
 </html>
